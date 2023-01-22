@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    font-size: 62.5%;
+}
+
+img{max-width: 100%;}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    
+margin: 3rem 0 0 1rem;}
+.header h1{
+    justify-items: center;
+}
+    
+
+h1{font-size: 6rem;
+color: blue;}
+a {text-decoration: none;}
+
+.navegacion ul{
+    text-decoration: none;
+    color:black;
+    list-style: none;
+    font-size: 1.5rem;
+    display:flex ;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+h2{font-size: 4rem;
+margin: 3rem 0 1rem 0rem;
+text-align: center;}
+h3{font-size: 3rem;
+    margin: 3rem 0 1rem 0rem;
+    text-align: center;
+
+}
+
+h4{
+    font-size: 2.5rem;
+margin: 3rem 0 1rem 0rem;
+text-align: center;
+}
+
+.actualidad{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    
+}
+.actualidad p{
+    font-size: 2rem;
+    margin: 0rem 12rem 4rem 12rem;
+    
+}
+.actualidad img{
+    width: 70rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    
+    }
+
+ .carousel-inner{
+        display: grid;
+        justify-content: center;
+    }
+
+.jugadores h2{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+
+}
+.posiciones{
+    margin-bottom: 4rem;
+}
+.jugadores h4{
+    font-size: 2.5rem;
+    color: black;
+  
+}
+.jugadores img{
+    height: 53rem;
+    position: relative;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+   background-color: black;  
+   position: relative;
+
+}
+#carouselExampleCaptions, #carouselExampleCaptions1, #carouselExampleCaptions2{
+    margin: 15rem 0 15rem 0;
+    
+}
+
+
+.footer__h2{
+    display: flex;
+    justify-items: left;
+    margin-left: 1rem;
+}
+.footer__1{
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    gap: 4rem;
+    height: 20rem;
+    width: 40rem;
+     
+}
+.footer__imgfb{
+    width: 48rem;
+}
+.footer__imgig{
+    width: 48rem;
+}
+
+.footer__2{
+justify-items: center;
+margin-left: 1rem;
+    
+}
+.actualidad h3{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    }
+
+.video__historia1{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.fotos__1{
+    display: inline-flex;
+    justify-content: baseline;
+    gap: 3rem;
+    
+
+    margin-left: 10rem;
+    margin-top: 2rem;
+    
+    width: 45rem;
+    height: 30rem;
+}
+.fotos__2{
+    display: inline-flex;
+    gap: 3rem;
+    width: 55rem;
+    height: 35rem;
+    margin-top: 2rem;
+    margin-left: 20rem;
+   
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.noticias img{
+        padding: 1rem 10rem 3rem 10rem;
+        margin: 1rem 2rem 5rem 2rem
+        }
+.noticias p{
+    font-size: 2rem;
+    margin: 0rem 12rem 4rem 8rem;
+
+}
+.juegos__1 img{
+    padding: 1rem 10rem 3rem 10rem;
+        margin: 1rem 2rem 5rem 20rem
+   
+}
+.juegos p{
+    margin: 4em 0 2rem 1rem;
+    font-size: 2rem;
+   
+}
+
+
+.cuestionario{
+    
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 50rem;
+    margin-right: 50rem;
+
+}
+
