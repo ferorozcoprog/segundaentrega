@@ -15,37 +15,38 @@ img{max-width: 100%;}
     gap: 4rem;
     
 margin: 3rem 0 0 1rem;}
+
+/* estilos propios home*/
+
 .header h1{
     justify-items: center;
 }
+
+.container-fluid,.navbar-brand {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px){
+.container-fluid, .navbar-brand {
+    font-size: 2rem;
+    gap:5rem;}}
     
 
-h1{font-size: 6rem;
+h1{font-size: 3.5rem;
 color: blue;}
 a {text-decoration: none;}
 
-.navegacion ul{
-    text-decoration: none;
-    color:black;
-    list-style: none;
-    font-size: 1.5rem;
-    display:flex ;
-    gap: 3rem;
-    justify-content: center;
-    align-items: center;
-    
-}
-h2{font-size: 4rem;
+h2{font-size: 2.6rem;
 margin: 3rem 0 1rem 0rem;
 text-align: center;}
-h3{font-size: 3rem;
+h3{font-size: 2.2rem;
     margin: 3rem 0 1rem 0rem;
     text-align: center;
 
 }
 
 h4{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 margin: 3rem 0 1rem 0rem;
 text-align: center;
 }
@@ -59,16 +60,47 @@ text-align: center;
     
 }
 .actualidad p{
-    font-size: 2rem;
-    margin: 0rem 12rem 4rem 12rem;
+    font-size: 1.2rem;
+    margin: 0rem 2rem 2rem 2rem;
     
 }
 .actualidad img{
     width: 70rem;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     
+    justify-content: center;
+    
     }
+@media (min-width:992px){
+    h1{font-size: 6rem;}
+    h2{font-size: 4rem;}
+    h3{font-size: 3rem;}
+    h4{font-size: 2.5rem;}
+    .actualidad{
+            display: grid;
+           grid-template-columns: repeat(2,1fr);
+           row-gap: 2rem;
+           column-gap: 2rem;
+           max-height: max-content;
+           align-items: stretch;
+           justify-items: stretch;
+        
+        
+        }
+        .actualidad p{font-size: 1.5rem;
+        
+    
+        }
+        .actualidad img{
+           height: 350px;
+           width: auto;
+        }
+               
+        }
+    
+       
+
 
  .carousel-inner{
         display: grid;
@@ -76,15 +108,15 @@ text-align: center;
     }
 
 .jugadores h2{
-    margin-top: 8rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 
 }
 .posiciones{
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 .jugadores h4{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: black;
   
 }
@@ -99,7 +131,9 @@ text-align: center;
 
 }
 #carouselExampleCaptions, #carouselExampleCaptions1, #carouselExampleCaptions2{
-    margin: 15rem 0 15rem 0;
+    margin: 2rem 0 2rem 0rem;
+
+    
     
 }
 
@@ -128,6 +162,7 @@ text-align: center;
 .footer__2{
 justify-items: center;
 margin-left: 1rem;
+
     
 }
 .actualidad h3{
@@ -135,6 +170,7 @@ margin-left: 1rem;
     text-align: center;
     margin-top: 2rem;
     }
+/* estilos pagina historia*/
 
 .video__historia1{
     display: flex;
