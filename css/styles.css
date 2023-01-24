@@ -131,12 +131,13 @@ text-align: center;
 
 }
 #carouselExampleCaptions, #carouselExampleCaptions1, #carouselExampleCaptions2{
-    margin: 2rem 0 2rem 0rem;
-
-    
-    
+    margin: 2rem 0 2rem 0rem;  
 }
 
+.nav-item{
+    margin-left: 4rem;
+    
+}
 
 .footer__h2{
     display: flex;
