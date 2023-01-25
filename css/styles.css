@@ -14,42 +14,62 @@ img{max-width: 100%;}
     align-items: center;
     gap: 4rem;
     
+    
 margin: 3rem 0 0 1rem;}
 
 /* estilos propios home*/
 
 .header h1{
     justify-items: center;
+    font-size: 2rem;
+    color: blue;
 }
+h1{font-size: 2rem;
+    text-align: center;}
+h2{ font-size: 1.8rem;
+    text-align: center;}
+h3{font-size: 1.5rem;
+    text-align: center;}
+h4{font-size: 1.2rem;
+    text-align: center;}
 
 .container-fluid,.navbar-brand {
     font-size: 1.5rem;
+}
+@media (min-width: 425px){
+    .header h1{
+        font-size: 3.5rem;
+    }
+    h1{font-size: 3.5rem;}
+    h2{ font-size: 2.6rem;}
+    h3{font-size: 2.2rem;}
+    h4{font-size: 1.5rem;}
 }
 
 @media screen and (min-width: 992px){
 .container-fluid, .navbar-brand {
     font-size: 2rem;
-    gap:5rem;}}
+    gap:5rem;}
+    .header h1{
+        font-size: 6rem;}
     
 
-h1{font-size: 3.5rem;
+h1{font-size: 6rem;
 color: blue;}
 a {text-decoration: none;}
 
-h2{font-size: 2.6rem;
+h2{font-size: 4rem;
 margin: 3rem 0 1rem 0rem;
-text-align: center;}
+}
 h3{font-size: 2.2rem;
     margin: 3rem 0 1rem 0rem;
-    text-align: center;
 
 }
 
 h4{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 margin: 3rem 0 1rem 0rem;
-text-align: center;
-}
+}}
 
 .actualidad{
     display: flex;
@@ -121,7 +141,7 @@ text-align: center;
   
 }
 .jugadores img{
-    height: 53rem;
+    height: 30rem;
     position: relative;
 }
 
@@ -135,9 +155,41 @@ text-align: center;
 }
 
 .nav-item{
-    margin-left: 4rem;
+    margin-left: 3rem;
     
 }
+.footer__h2{
+    display: flex;
+    justify-items: left;
+    margin-left: 1rem;
+}
+.footer__1{
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    gap: 4rem;
+    height: 10rem;
+    width: 20rem;
+    
+}
+.footer__imgfb{
+    width: 53rem;
+}
+.footer__imgig{
+    width: 53rem;
+}
+
+.footer__2{
+justify-items: center;
+margin-left: 1rem;
+
+}
+.footer__2 iframe{
+    width: 30rem;
+    height: 30rem;
+}
+
+@media (min-width: 425px){
 
 .footer__h2{
     display: flex;
@@ -151,7 +203,7 @@ text-align: center;
     gap: 4rem;
     height: 20rem;
     width: 40rem;
-     
+    
 }
 .footer__imgfb{
     width: 48rem;
@@ -163,9 +215,14 @@ text-align: center;
 .footer__2{
 justify-items: center;
 margin-left: 1rem;
-
-    
 }
+
+.jugadores img{
+    height: 53rem;
+}
+}
+
+
 .actualidad h3{
     font-size: 3rem;
     text-align: center;
@@ -173,11 +230,56 @@ margin-left: 1rem;
     }
 /* estilos pagina historia*/
 
-.video__historia1{
+.historia {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    text-align: justify;
+    
+}
+.historia p{
+    font-size: 1.2rem;
+    margin: 0rem 2rem 2rem 2rem;
+    
+}
+.historia img{
+    width: 70rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    
+    }
+@media (min-width:992px){
+    h1{font-size: 6rem;}
+    h2{font-size: 4rem;}
+    h3{font-size: 3rem;}
+    h4{font-size: 2.5rem;}
+    .historia{
+            display: grid;
+           grid-template-columns: repeat(2,1fr);
+           row-gap: 2rem;
+           column-gap: 2rem;
+           max-height: max-content;
+           align-items: stretch;
+           justify-items: stretch;
+        
+        
+        }
+        .historia p{font-size: 1.5rem;
+        
+    
+        }
+        .historia img{
+           height: 350px;
+           width: auto;
+        }
+               
+        }
+
+.video__historia1{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .fotos__1{
