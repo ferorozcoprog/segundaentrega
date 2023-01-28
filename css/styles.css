@@ -272,8 +272,14 @@ margin-left: 1rem;
 .historia2 h3{
     margin: 2rem;
 }
-    
-   
+.historia2{
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+}
+      
 @media (min-width:992px) {
     h1{font-size: 6rem;}
     h2{font-size: 4rem;
@@ -301,13 +307,7 @@ margin-left: 1rem;
            margin-top: 0;
            margin-bottom: 0;
         }
-        .historia2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: justify;
-        }
+        
         .historia2 p{
             font-size: 1.5rem;
             margin-top: 30px;
