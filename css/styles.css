@@ -34,7 +34,8 @@ h3{font-size: 1.5rem;
 h4{font-size: 1.2rem;
     text-align: center;}
 p{ font-size: 1.1rem;
-text-align: justify;}
+text-align: justify;
+font-family:'Montserrat', sans-serif;}
 
 .container-fluid,.navbar-brand {
     font-size: 1.5rem;
@@ -48,7 +49,8 @@ text-align: justify;}
     h2{ font-size: 2.6rem;}
     h3{font-size: 2.2rem;}
     h4{font-size: 1.5rem;}
-    p {font: 1.4rem;}
+    p {font-size: 1.4rem;
+    font-family:'Montserrat', sans-serif}
 }
 
 @media screen and (min-width: 992px){
@@ -67,13 +69,13 @@ a {text-decoration: none;}
 h2{font-size: 4rem;
 margin: 3rem 0 1rem 0rem;
 }
-h3{font-size: 2.2rem;
+h3{font-size: 3rem;
     margin: 3rem 0 1rem 0rem;
 
 }
 
 h4{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 margin: 3rem 0 1rem 0rem;
 }
 .nav-link:hover{
@@ -83,19 +85,21 @@ margin: 3rem 0 1rem 0rem;
 .nav-link {
     transition:.3s;
 }
+/*
 .actualidad{
     display: flex;
     flex-direction: column;
     text-align: justify;
     justify-content: center;
     align-items: center;
+}*/
     
-}
+
 .actualidad p{
     font-size: 1.2rem;
     margin: 0rem 2rem 2rem 2rem;
     text-align: justify;
-    
+    font-family:'Montserrat', sans-serif
 }
 .actualidad img{
     width: 70rem;
@@ -105,12 +109,10 @@ margin: 3rem 0 1rem 0rem;
     justify-content: center;
     
     } 
+
 }
 @media (min-width:992px){
-    h1{font-size: 6rem;}
-    h2{font-size: 4rem;}
-    h3{font-size: 3rem;}
-    h4{font-size: 2.5rem;}
+   
     .actualidad{
             display: grid;
            grid-template-columns: repeat(2,1fr);
@@ -123,13 +125,19 @@ margin: 3rem 0 1rem 0rem;
         
         }
         .actualidad p{font-size: 1.5rem;
-        
-    
+            align-items: center;
+            margin: 0;
+            font-family:'Montserrat', sans-serif
         }
         .actualidad img{
            height: 350px;
            width: auto;
+          
         }
+        .actualidad img:first-child{
+            width: 462.5px;
+        }
+        
                
         }
     
