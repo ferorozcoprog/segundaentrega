@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/*paleta de colores*/
+/* tamaño de pantalla*/
+/*separaciones (margins y padding)*/
+/*fuente*/
+/*mixin*/
+/*extend*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin: 3rem 0 0 1rem;
+}
+
+/* estilos propios home*/
+.header h1 {
+  justify-items: center;
+  font-size: 2rem;
+  color: blue;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid, .navbar-brand {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 425px) {
+  .header h1 {
+    font-size: 3.5rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-fluid, .navbar-brand {
+    font-size: 2rem;
+    gap: 5rem;
+  }
+  .header h1 {
+    font-size: 6rem;
+  }
+  h1 {
+    font-size: 6rem;
+    color: blue;
+  }
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 4rem;
+    margin: 3rem 0 1rem 0rem;
+  }
+  h3 {
+    font-size: 3rem;
+    margin: 3rem 0 1rem 0rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+    margin: 3rem 0 1rem 0rem;
+  }
+  .nav-link:hover {
+    background-color: grey;
+    padding: 10px;
+  }
+  .nav-link {
+    transition: 0.3s;
+  }
+  .actualidad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    max-height: max-content;
+    align-items: stretch;
+    justify-items: stretch;
+  }
+  .actualidad p {
+    font-size: 1.5rem;
+    margin: 0rem;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+  }
+  .actualidad img {
+    width: 70rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    height: 350px;
+    justify-content: center;
+  }
+  .actualidad img:first-child {
+    width: 462.5px;
+  }
+}
+.carousel-inner {
+  display: grid;
+  justify-content: center;
+}
+
+.jugadores h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posiciones {
+  margin-bottom: 1rem;
+}
+
+.jugadores h4 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.jugadores img {
+  height: 30rem;
+  position: relative;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black;
+  position: relative;
+}
+
+#carouselExampleCaptions, #carouselExampleCaptions1, #carouselExampleCaptions2 {
+  margin: 2rem 0 2rem 0rem;
+}
+
+.nav-item {
+  margin-left: 3rem;
+}
+
+.footer__h2 {
+  display: flex;
+  justify-items: left;
+  margin-left: 1rem;
+}
+
+.footer__1 {
+  display: inline-flex;
+  margin-left: 1rem;
+  margin-top: 3rem;
+  gap: 4rem;
+  height: 10rem;
+  width: 20rem;
+}
+
+.footer__imgfb {
+  width: 48rem;
+}
+
+.footer__imgig {
+  width: 48rem;
+}
+
+.footer__2 {
+  justify-items: center;
+  margin-left: 1rem;
+}
+
+.footer__2 iframe {
+  width: 30rem;
+  height: 30rem;
+}
+
+@media (min-width: 426px) {
+  .footer__h2 {
+    display: flex;
+    justify-items: left;
+    margin-left: 1rem;
+  }
+  .footer__1 {
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    gap: 4rem;
+    height: 20rem;
+    width: 40rem;
+  }
+  .footer__imgfb {
+    width: 48rem;
+  }
+  .footer__imgig {
+    width: 48rem;
+  }
+  .footer__2 {
+    justify-items: center;
+    margin-left: 1rem;
+  }
+  .jugadores img {
+    height: 53rem;
+  }
+}
+.actualidad h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* estilos pagina historia*/
+.historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.historia p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.historia img {
+  width: 70rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.historia2 p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+
+.historia2 h3 {
+  margin: 2rem;
+}
+
+.historia2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.video__historia1 {
+  width: 300px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  .historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 2rem;
+    max-height: max-content;
+    align-items: flex-start;
+    justify-items: stretch;
+  }
+  .historia p {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .historia img {
+    height: 350px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .historia2 p {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .historia2 h3 {
+    margin: 4rem;
+  }
+  .footer__imgfb:hover {
+    width: 40rem;
+    transform: scale(1.5);
+  }
+  .footer__imgfb {
+    transition: all 0.3s;
+  }
+  .footer__imgig:hover {
+    width: 53rem;
+    transform: scale(1.5);
+  }
+  .footer__imgig {
+    width: 53rem;
+    transition: all 0.3s;
+  }
+  .footer__imgtw:hover {
+    transform: scale(1.5);
+  }
+  .footer__imgtw {
+    transition: all 0.3s;
+  }
+}
+/*Fotos y videos*/
+.fotos__1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fotos__1_1 {
+  display: flex;
+  width: 30rem;
+  height: 20rem;
+  justify-items: stretch;
+}
+
+.video__historia1, .video__youtube1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7.5px;
+  margin: 2rem 0 2rem 0;
+}
+
+.fotos__h2 {
+  margin: 2rem 0 2rem 0;
+}
+
+.fotos__2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__h2 {
+  margin-top: 3rem;
+}
+
+@media (min-width: 425px) {
+  .fotos__1 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 40rem;
+  }
+  .fotos__1_1 {
+    display: flex;
+    width: 40rem;
+    height: 30rem;
+    justify-items: stretch;
+  }
+  .video__youtube1, .video__historia1 {
+    width: 42rem;
+    height: 38rem;
+    padding: 0 7.5px;
+  }
+  .fotos__h2 {
+    margin: 2rem 0 2rem 0;
+  }
+  .fotos__2 img {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 1.5rem;
+    padding: 0 7.5px;
+  }
+  .fotos__2 iframe {
+    width: 400px;
+    margin: 5px 0;
+  }
+  .footer__h2 {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .fotos__1 img {
+    width: 500px;
+    margin: 2.5rem 0;
+  }
+  .fotos__1_1 {
+    width: 50rem;
+    height: 35rem;
+    margin: 2rem 0 1rem 0;
+  }
+  .video__historia1 {
+    width: 700px;
+  }
+  .video__youtube1 {
+    width: 700px;
+  }
+  .fotos__2 img {
+    width: 500px;
+    gap: 1.5rem;
+  }
+  .fotos__2 iframe {
+    width: 500px;
+  }
+  .footer__h2 {
+    margin-top: 3rem;
+  }
+  .fotos__h2 {
+    margin: 1rem 0 3rem 0;
+  }
+}
+@media (min-width: 992px) {
+  .fotos__1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1/2fr auto 1/2fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .fotos__2 {
+    display: flex;
+  }
+}
+/*noticias*/
+.noticias p {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .noticias {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+  }
+  .noticias img {
+    padding: 1rem 5rem 3rem 5rem;
+    margin: 1rem 2rem 5rem 2rem;
+  }
+  .noticias p {
+    font-size: 2rem;
+    margin: 0rem 6rem 4rem 4rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+/*proximos juegos*/
+.juegos__1 img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.juegos p {
+  margin: 1rem;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .juegos__1 img {
+    padding: 1rem 5rem 3rem 2rem;
+    margin: 1rem 2rem 5rem 3rem;
+  }
+  .juegos p {
+    margin: 3rem 0 2rem 1rem;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+/*unete*/
+.cuestionario label {
+  font-family: "Montserrat", sans-serif;
+}
+
+.cuestionario {
+  font-size: 1rem;
+  margin-left: 40px;
+  margin-top: 30px;
+  padding: 0;
+  width: 300px;
+  height: 170px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.cuestionario div {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

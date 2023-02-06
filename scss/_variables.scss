@@ -1,0 +1,26 @@
+/*paleta de colores*/
+$color-primario: blue;
+$color-secundario: gold;
+
+/* tamaño de pantalla*/
+$cel-chico: 425px;
+$tablet: 768px;
+$pc: 992px;
+
+/*separaciones (margins y padding)*/
+$espacio-chico: 10px;
+$espacio-medio: 20px;
+$espacio-grande: 40px;
+
+/*fuente*/
+$fuente-titulos: 'Kanit', sans-serif;
+$fuente-texto: "Montserrat", sans-serif; 
+
+/*mixin*/
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*extend*/
