@@ -253,7 +253,7 @@ margin-left: 1rem;
 }
 
 .historia2 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     font-family:'Montserrat', sans-serif;
 }
@@ -487,8 +487,6 @@ width: 700px;
     
 }
 
-
-
 }
  
 
@@ -557,10 +555,9 @@ width: 700px;
 .cuestionario{
    
    font-size: 1rem;
-   margin-left: 40px;
+   margin-left: 50px;
    margin-top: 30px;
    padding: 0;
-   width: 300px;
    height: 170px;
     font-family:'Montserrat', sans-serif;}
     .botones{
@@ -571,4 +568,36 @@ width: 700px;
         margin-bottom: $espacio-chico;
     }
 
+    @media (min-width: 425px){
+        .cuestionario{
+   
+            font-size: 1.2rem;
+            margin-left: 40px;
+            margin-top: 50px;
+                 
+             }
 
+    }
+
+    @media (min-width: 768px){
+       .cuestionario{
+        margin-left: 220px;
+
+       } 
+
+    }
+
+    @media (min-width: 992px){
+       .cuestionario{
+        font-size: 1.6rem;
+        margin-left: 300px;
+        height: 300px;
+       } 
+       .botones{
+        margin-top: 30px;
+        
+    } 
+    .cuestionario div{
+        margin-bottom: $espacio-medio - 5px;
+    }
+    }
