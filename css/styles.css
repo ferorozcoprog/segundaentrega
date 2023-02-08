@@ -3,6 +3,7 @@
 /* tamaño de pantalla*/
 /*separaciones (margins y padding)*/
 /*fuente*/
+/* tamaño de fuente*/
 /*mixin*/
 /*extend*/
 * {
@@ -241,6 +242,28 @@ p {
     height: 53rem;
   }
 }
+@media (min-width: 768px) {
+  .footer__1 {
+    height: 70px;
+    margin-bottom: 40px;
+    margin-left: 250px;
+    margin-top: 40px;
+  }
+  .footer__imgfb {
+    width: 70px;
+  }
+  .footer__imgig {
+    width: 70px;
+  }
+  .footer__imgtw {
+    width: 70px;
+    height: 70px;
+  }
+  .footer__2 {
+    display: flex;
+    justify-content: center;
+  }
+}
 .actualidad h3 {
   font-size: 3rem;
   text-align: center;
@@ -332,26 +355,42 @@ p {
   .historia2 h3 {
     margin: 4rem;
   }
+  .footer-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__1 {
+    height: 70px;
+    margin-bottom: 40px;
+    margin-left: 85px;
+    margin-top: 40px;
+    gap: 40px;
+  }
   .footer__imgfb:hover {
-    width: 40rem;
+    width: 85px;
     transform: scale(1.5);
   }
   .footer__imgfb {
     transition: all 0.3s;
   }
   .footer__imgig:hover {
-    width: 53rem;
+    width: 85px;
     transform: scale(1.5);
   }
   .footer__imgig {
-    width: 53rem;
     transition: all 0.3s;
   }
   .footer__imgtw:hover {
+    width: 100px;
     transform: scale(1.5);
   }
   .footer__imgtw {
     transition: all 0.3s;
+  }
+  .footer__2 {
+    margin-top: 20px;
   }
 }
 /*Fotos y videos*/
@@ -494,9 +533,14 @@ p {
     margin: 1rem 2rem 5rem 2rem;
   }
   .noticias p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0rem 6rem 4rem 4rem;
     font-family: "Montserrat", sans-serif;
+  }
+}
+@media (min-width: 992px) {
+  .noticias p {
+    font-size: 2rem;
   }
 }
 /*proximos juegos*/

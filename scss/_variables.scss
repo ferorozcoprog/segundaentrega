@@ -16,6 +16,31 @@ $espacio-grande: 40px;
 $fuente-titulos: 'Kanit', sans-serif;
 $fuente-texto: "Montserrat", sans-serif; 
 
+/* tamaño de fuente*/
+$h1xs:20px;
+$h2xs:18px;
+$h3xs:15px;
+$h4xs:13px;
+$pxs: 11px;
+
+$h1s:35px;
+$h2s:26px;
+$h3s:22px;
+$h4s:18px;
+$ps: 13px;
+
+$h1m:40px;
+$h2m:30px;
+$h3m:25px;
+$h4m:20px;
+$pm: 14px;
+
+$h1g:60px;
+$h2g:40px;
+$h3g:30px;
+$h4g:25px;
+$pg: 20px;
+
 /*mixin*/
 @mixin flex-column-center {
     display: flex;
