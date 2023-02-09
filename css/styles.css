@@ -6,6 +6,15 @@
 /* tamaño de fuente*/
 /*mixin*/
 /*extend*/
+.botones, .boton-limpiar, .boton-enviar {
+  width: 200px;
+  padding: 2px 5px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,33 +38,39 @@ img {
 /* estilos propios home*/
 .header h1 {
   justify-items: center;
-  font-size: 2rem;
   color: blue;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 20px;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 18px;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 15px;
   text-align: center;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 13px;
   text-align: center;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 11px;
   text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Kanit", sans-serif;
+}
+
+p {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -64,24 +79,20 @@ p {
 }
 
 @media (min-width: 425px) {
-  .header h1 {
-    font-size: 3.5rem;
-  }
   h1 {
-    font-size: 3.5rem;
+    font-size: 35px;
   }
   h2 {
-    font-size: 2.6rem;
+    font-size: 26px;
   }
   h3 {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 18px;
   }
   p {
-    font-size: 1.4rem;
-    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -89,27 +100,27 @@ p {
     font-size: 2rem;
     gap: 5rem;
   }
-  .header h1 {
-    font-size: 6rem;
-  }
   h1 {
-    font-size: 6rem;
+    font-size: 60px;
     color: blue;
   }
   a {
     text-decoration: none;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 40px;
     margin: 3rem 0 1rem 0rem;
   }
   h3 {
-    font-size: 3rem;
+    font-size: 30px;
     margin: 3rem 0 1rem 0rem;
   }
   h4 {
-    font-size: 2.5rem;
+    font-size: 25px;
     margin: 3rem 0 1rem 0rem;
+  }
+  p {
+    font-size: 20px;
   }
   .nav-link:hover {
     background-color: grey;
@@ -128,15 +139,13 @@ p {
     justify-items: stretch;
   }
   .actualidad p {
-    font-size: 1.5rem;
     margin: 0rem;
     text-align: justify;
-    font-family: "Montserrat", sans-serif;
   }
   .actualidad img {
     width: 70rem;
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     height: 350px;
     justify-content: center;
   }
@@ -150,16 +159,15 @@ p {
 }
 
 .jugadores h2 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .posiciones {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .jugadores h4 {
-  font-size: 1.5rem;
   color: black;
 }
 
@@ -178,19 +186,19 @@ p {
 }
 
 .nav-item {
-  margin-left: 3rem;
+  margin-left: 30px;
 }
 
 .footer__h2 {
   display: flex;
   justify-items: left;
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 .footer__1 {
   display: inline-flex;
-  margin-left: 1rem;
-  margin-top: 3rem;
+  margin-left: 10px;
+  margin-top: 30px;
   gap: 4rem;
   height: 10rem;
   width: 20rem;
@@ -206,7 +214,7 @@ p {
 
 .footer__2 {
   justify-items: center;
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 .footer__2 iframe {
@@ -218,12 +226,12 @@ p {
   .footer__h2 {
     display: flex;
     justify-items: left;
-    margin-left: 1rem;
+    margin-left: 10px;
   }
   .footer__1 {
     display: inline-flex;
-    margin-left: 1rem;
-    margin-top: 3rem;
+    margin-left: 10px;
+    margin-top: 30px;
     gap: 4rem;
     height: 20rem;
     width: 40rem;
@@ -236,7 +244,7 @@ p {
   }
   .footer__2 {
     justify-items: center;
-    margin-left: 1rem;
+    margin-left: 10px;
   }
   .jugadores img {
     height: 53rem;
@@ -265,7 +273,6 @@ p {
   }
 }
 .actualidad h3 {
-  font-size: 3rem;
   text-align: center;
   margin-top: 2rem;
 }
@@ -274,37 +281,34 @@ p {
 .historia {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   align-items: center;
   text-align: justify;
 }
 
 .historia p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
 }
 
 .historia img {
   width: 70rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .historia2 p {
-  font-size: 1.1rem;
+  font-size: 11px;
   text-align: justify;
-  font-family: "Montserrat", sans-serif;
 }
 
 .historia2 h3 {
-  margin: 2rem;
+  margin: 20px;
 }
 
 .historia2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   align-items: center;
   text-align: justify;
 }
@@ -314,19 +318,6 @@ p {
 }
 
 @media (min-width: 992px) {
-  h1 {
-    font-size: 6rem;
-  }
-  h2 {
-    font-size: 4rem;
-    margin-bottom: 30px;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 2.5rem;
-  }
   .historia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -336,10 +327,6 @@ p {
     align-items: flex-start;
     justify-items: stretch;
   }
-  .historia p {
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
-  }
   .historia img {
     height: 350px;
     width: auto;
@@ -347,18 +334,17 @@ p {
     margin-bottom: 0;
   }
   .historia2 p {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: "Montserrat", sans-serif;
   }
   .historia2 h3 {
-    margin: 4rem;
+    margin: 40px;
   }
   .footer-general {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     align-items: center;
   }
   .footer__1 {
@@ -397,7 +383,7 @@ p {
 .fotos__1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   align-items: center;
   gap: 1.5rem;
 }
@@ -424,7 +410,7 @@ p {
 .fotos__2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   align-items: center;
   gap: 1.5rem;
 }
@@ -437,7 +423,7 @@ p {
   .fotos__1 img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     align-items: center;
     gap: 1.5rem;
     width: 40rem;
@@ -516,45 +502,31 @@ p {
   }
 }
 /*noticias*/
-.noticias p {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-}
-
 @media (min-width: 768px) {
   .noticias {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: justify;
-    justify-content: center;
   }
   .noticias img {
     padding: 1rem 5rem 3rem 5rem;
     margin: 1rem 2rem 5rem 2rem;
   }
   .noticias p {
-    font-size: 1.5rem;
     margin: 0rem 6rem 4rem 4rem;
-    font-family: "Montserrat", sans-serif;
-  }
-}
-@media (min-width: 992px) {
-  .noticias p {
-    font-size: 2rem;
   }
 }
 /*proximos juegos*/
 .juegos__1 img {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   align-items: center;
 }
 
 .juegos p {
-  margin: 1rem;
-  font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
+  margin: 10px;
 }
 
 @media (min-width: 768px) {
@@ -564,8 +536,6 @@ p {
   }
   .juegos p {
     margin: 3rem 0 2rem 1rem;
-    font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
   }
 }
 /*unete*/
@@ -574,16 +544,25 @@ p {
 }
 
 .cuestionario {
-  font-size: 1rem;
+  font-size: 10px;
   margin-left: 50px;
   margin-top: 30px;
   padding: 0;
   height: 170px;
-  font-family: "Montserrat", sans-serif;
 }
 
-.botones {
-  margin-top: 20px;
+.botones, .boton-limpiar, .boton-enviar {
+  margin-bottom: 40px;
+}
+
+.boton-enviar {
+  background-color: goldenrod;
+  color: black;
+}
+
+.boton-limpiar {
+  background-color: red;
+  color: black;
 }
 
 .cuestionario div {
@@ -592,9 +571,10 @@ p {
 
 @media (min-width: 425px) {
   .cuestionario {
-    font-size: 1.2rem;
+    font-size: 13px;
     margin-left: 40px;
     margin-top: 50px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 768px) {
@@ -608,7 +588,7 @@ p {
     margin-left: 300px;
     height: 300px;
   }
-  .botones {
+  .botones, .boton-enviar, .boton-limpiar {
     margin-top: 30px;
   }
   .cuestionario div {

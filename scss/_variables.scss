@@ -3,7 +3,8 @@ $color-primario: blue;
 $color-secundario: gold;
 
 /* tamaño de pantalla*/
-$cel-chico: 425px;
+$mobile-s:320px; 
+$mobile-l: 425px;
 $tablet: 768px;
 $pc: 992px;
 
@@ -11,6 +12,7 @@ $pc: 992px;
 $espacio-chico: 10px;
 $espacio-medio: 20px;
 $espacio-grande: 40px;
+$espacio-extragrande:60px;
 
 /*fuente*/
 $fuente-titulos: 'Kanit', sans-serif;
@@ -49,3 +51,12 @@ $pg: 20px;
 
 }
 /*extend*/
+
+.botones{
+    width: 200px;
+    padding: 2px 5px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}

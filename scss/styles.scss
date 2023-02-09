@@ -26,67 +26,71 @@ margin: 3rem 0 0 1rem;}
 
 .header h1{
     justify-items: center;
-    font-size: 2rem;
-    color: blue;
+    color:$color-primario;
     
 }
-h1{font-size: 2rem;
+h1{font-size: $h1xs;
     text-align: center;
     }
-h2{ font-size: 1.8rem;
+h2{ font-size: $h2xs;
     text-align: center;}
-h3{font-size: 1.5rem;
+h3{font-size: $h3xs;
     text-align: center;}
-h4{font-size: 1.2rem;
+h4{font-size: $h4xs;
     text-align: center;}
-p{ font-size: 1.1rem;
-text-align: justify;
-font-family:'Montserrat', sans-serif;}
+p{ font-size: $pxs;
+text-align: justify;}
+
+h1,h2,h3,h4{
+    font-family: $fuente-titulos;
+}
+
+p{font-family: $fuente-texto;
+}
 
 .container-fluid,.navbar-brand {
     font-size: 1.5rem;
 }
 
-@media (min-width: 425px){
-    .header h1{
-        font-size: 3.5rem;
+@media (min-width: $mobile-l){
+    
+    h1{font-size: $h1s;}
+    h2{ font-size: $h2s;}
+    h3{font-size: $h3s;}
+    h4{font-size: $h4s;}
+    p {font-size: $ps;
     }
-    h1{font-size: 3.5rem;}
-    h2{ font-size: 2.6rem;}
-    h3{font-size: 2.2rem;}
-    h4{font-size: 1.5rem;}
-    p {font-size: 1.4rem;
-    font-family:'Montserrat', sans-serif}
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: $pc){
 .container-fluid, .navbar-brand {
     font-size: 2rem;
     gap:5rem;}
-    .header h1{
-        font-size: 6rem;} 
-        
-
-h1{font-size: 6rem;
+    
+      
+h1{font-size: $h1g;
 color: blue;}
 a {text-decoration: none;
 }
 
-h2{font-size: 4rem;
+h2{font-size:$h2g;
 margin: 3rem 0 1rem 0rem;
 }
-h3{font-size: 3rem;
+h3{font-size: $h3g;
     margin: 3rem 0 1rem 0rem;
 
 }
 
 h4{
-    font-size: 2.5rem;
+    font-size: $h4g;
 margin: 3rem 0 1rem 0rem;
 }
+
+p{font-size: $pg;}
+
 .nav-link:hover{
     background-color: grey;
-    padding: 10px;
+    padding: $espacio-chico;
 }
 .nav-link {
     transition:.3s;
@@ -102,15 +106,14 @@ margin: 3rem 0 1rem 0rem;
 }
   
 .actualidad p{
-    font-size: 1.5rem;
     margin: 0rem;
     text-align: justify;
-    font-family:'Montserrat', sans-serif
+    
 }
 .actualidad img{
     width: 70rem;
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: $espacio-chico;
     height: 350px;
     justify-content: center;    
 } 
@@ -127,15 +130,14 @@ margin: 3rem 0 1rem 0rem;
     }
 
 .jugadores h2{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: $espacio-medio;
+    margin-bottom: $espacio-chico;
 
 }
 .posiciones{
-    margin-bottom: 1rem;
+    margin-bottom: $espacio-chico;
 }
 .jugadores h4{
-    font-size: 1.5rem;
     color: black;
   
 }
@@ -154,18 +156,18 @@ margin: 3rem 0 1rem 0rem;
 }
 
 .nav-item{
-    margin-left: 3rem;
+    margin-left: $espacio-medio+10;
     
 }
 .footer__h2{
     display: flex;
     justify-items: left;
-    margin-left: 1rem;
+    margin-left: $espacio-chico;
 }
 .footer__1{
     display: inline-flex;
-    margin-left: 1rem;
-    margin-top: 3rem;
+    margin-left: $espacio-chico;
+    margin-top: $espacio-medio+10;
     gap: 4rem;
     height: 10rem;
     width: 20rem;
@@ -183,7 +185,7 @@ margin: 3rem 0 1rem 0rem;
 
 .footer__2{
 justify-items: center;
-margin-left: 1rem;
+margin-left: $espacio-chico;
 
 }
 .footer__2 iframe{
@@ -196,12 +198,12 @@ margin-left: 1rem;
 .footer__h2{
     display: flex;
     justify-items: left;
-    margin-left: 1rem;
+    margin-left: $espacio-chico;
 }
 .footer__1{
     display: inline-flex;
-    margin-left: 1rem;
-    margin-top: 3rem;
+    margin-left: $espacio-chico;
+    margin-top: $espacio-medio+10;
     gap: 4rem;
     height: 20rem;
     width: 40rem;
@@ -216,7 +218,7 @@ margin-left: 1rem;
 
 .footer__2{
 justify-items: center;
-margin-left: 1rem;
+margin-left: $espacio-chico;
 }
 
 .jugadores img{
@@ -225,7 +227,7 @@ margin-left: 1rem;
 
 }
 
-@media (min-width:768px){
+@media (min-width:$tablet){
     .footer__1{
         height: 70px;
         margin-bottom: $espacio-grande;
@@ -252,46 +254,40 @@ margin-left: 1rem;
 }
 
 
-
 .actualidad h3{
-    font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
     }
+
 /* estilos pagina historia*/
 
 .historia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     align-items: center;
     text-align: justify;
     
 }
 .historia p{
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    font-family:'Montserrat', sans-serif;   
+    
+    margin-bottom: $espacio-medio;
+      
 }
 
 .historia img{
     width: 70rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-top: $espacio-medio+5;
+    margin-bottom: $espacio-chico;
 }
 
 .historia2 p {
-    font-size: 1.1rem;
+    font-size: $pxs;
     text-align: justify;
-    font-family:'Montserrat', sans-serif;
 }
 .historia2 h3{
-    margin: 2rem;
+    margin: $espacio-medio;
 }
 .historia2{
-    display: flex;
-            flex-direction: column;
-            justify-content: center;
+    @include flex-column-center;
             align-items: center;
             text-align: justify;
         
@@ -301,12 +297,7 @@ margin-left: 1rem;
     width: 300px;
 }
       
-@media (min-width:992px) {
-    h1{font-size: 6rem;}
-    h2{font-size: 4rem;
-    margin-bottom: 30px;}
-    h3{font-size: 3rem;}
-    h4{font-size: 2.5rem;}
+@media (min-width:$pc) {
     .historia{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -318,9 +309,7 @@ margin-left: 1rem;
 
         }
 
-        .historia p{font-size: 1.5rem;
-            font-family:'Montserrat', sans-serif;
-        }
+        
 
         .historia img{
            height: 350px;
@@ -330,18 +319,16 @@ margin-left: 1rem;
         }
         
         .historia2 p{
-            font-size: 1.5rem;
+            font-size: $pg;
             margin-top: 30px;
             margin-bottom: 30px;
-            font-family:'Montserrat', sans-serif;
+
         }
          .historia2 h3{
-            margin: 4rem;
+            margin: $espacio-grande;
          } 
          .footer-general {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            @include flex-column-center;
             align-items: center;
             
             
@@ -389,9 +376,7 @@ margin-left: 1rem;
 /*Fotos y videos*/
 
 .fotos__1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     align-items: center;
     gap: 1.5rem;
    
@@ -419,9 +404,7 @@ margin-left: 1rem;
 }
 
 .fotos__2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     align-items: center;
    gap: 1.5rem;
    
@@ -434,9 +417,7 @@ margin-left: 1rem;
 
 @media (min-width:425px) {
     .fotos__1 img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column-center;
     align-items: center;
     gap: 1.5rem;
     width: 40rem;
@@ -534,25 +515,19 @@ width: 700px;
 }
 
 .fotos__2{
-    display: flex;
-
-    
+    display: flex;    
 }
 
 }
  
 
 /*noticias*/
-.noticias p{
-    font-size: 1rem;
-    font-family:'Montserrat', sans-serif;
-}
+
 @media (min-width:768px){
 .noticias{
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
     text-align: justify;
-    justify-content: center;
+    
 }
 
 .noticias img{
@@ -560,32 +535,24 @@ width: 700px;
         margin: 1rem 2rem 5rem 2rem
         }
 .noticias p{
-    font-size: 1.5rem;
     margin: 0rem 6rem 4rem 4rem;
-    font-family:'Montserrat', sans-serif;}
+    }
 }
 
-@media (min-width:992px){
-   .noticias p{font-size: 2rem;
-
-   } 
-}
 
 
 
 /*proximos juegos*/
+
 .juegos__1 img{
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
+   @include flex-column-center;
    align-items: center;
    
    
 }
 .juegos p{
-    margin: 1rem;
-    font-size: 1.1rem;
-    font-family:'Montserrat', sans-serif;
+    margin: $espacio-chico;
+    
 }
 
 
@@ -598,44 +565,58 @@ width: 700px;
 
 .juegos p{
     margin: 3rem 0 2rem 1rem;
-    font-size: 2rem;
-    font-family:'Montserrat', sans-serif;
+    
    
 }
 }
 
 /*unete*/
 .cuestionario label{
-    font-family:'Montserrat', sans-serif;
+    font-family:$fuente-texto;
 }
 .cuestionario{
    
-   font-size: 1rem;
+   font-size: $espacio-chico;
    margin-left: 50px;
    margin-top: 30px;
    padding: 0;
    height: 170px;
-    font-family:'Montserrat', sans-serif;}
+    }
+
     .botones{
-        margin-top: 20px;
+        margin-bottom: $espacio-grande;
         
     } 
+    .boton-enviar {
+        @extend .botones;
+        background-color: goldenrod;
+        color: black;
+    }
+
+    .boton-limpiar{
+        @extend .botones;
+        background-color: red;
+        color: black;
+            
+        }
+    
     .cuestionario div{
         margin-bottom: $espacio-chico;
     }
 
-    @media (min-width: 425px){
+    @media (min-width:$mobile-l){
         .cuestionario{
    
-            font-size: 1.2rem;
+            font-size: $ps;
             margin-left: 40px;
             margin-top: 50px;
+            margin-bottom: 80px;
                  
              }
-
+          
     }
 
-    @media (min-width: 768px){
+    @media (min-width:$tablet){
        .cuestionario{
         margin-left: 220px;
        } 
@@ -643,7 +624,7 @@ width: 700px;
 
     }
 
-    @media (min-width: 992px){
+    @media (min-width: $pc){
        .cuestionario{
         font-size: 1.6rem;
         margin-left: 300px;
@@ -651,6 +632,8 @@ width: 700px;
        } 
        .botones{
         margin-top: 30px;
+       
+
         
     } 
     .cuestionario div{
