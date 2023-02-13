@@ -58,8 +58,7 @@ p{font-family: $fuente-texto;
     h2{ font-size: $h2s;}
     h3{font-size: $h3s;}
     h4{font-size: $h4s;}
-    p {font-size: $ps;
-    }
+    p {font-size: $ps;}
 }
 
 @media screen and (min-width: $pc){
@@ -73,7 +72,7 @@ color: blue;}
 a {text-decoration: none;
 }
 
-h2{font-size:$h2g;
+h2{font-size: $h2g;
 margin: 3rem 0 1rem 0rem;
 }
 h3{font-size: $h3g;
@@ -117,8 +116,15 @@ p{font-size: $pg;}
     height: 350px;
     justify-content: center;    
 } 
-    .actualidad img:first-child{
+}
+  /*  .actualidad img:first-child{
         width: 462.5px;
+    }
+}*/
+
+@media (min-width:1200px){
+    .actualidad img {
+        height: 450px ;
     }
 }
     
@@ -159,14 +165,18 @@ p{font-size: $pg;}
     margin-left: $espacio-medio+10;
     
 }
+
+.footer-general {
+    @include flex-column-center;
+
+}
 .footer__h2{
     display: flex;
-    justify-items: left;
-    margin-left: $espacio-chico;
+   
 }
 .footer__1{
     display: inline-flex;
-    margin-left: $espacio-chico;
+    
     margin-top: $espacio-medio+10;
     gap: 4rem;
     height: 10rem;
@@ -231,7 +241,7 @@ margin-left: $espacio-chico;
     .footer__1{
         height: 70px;
         margin-bottom: $espacio-grande;
-        margin-left: 250px;
+        margin-left: 10px;
         margin-top:$espacio-grande;
     }
     .footer__imgfb{
@@ -248,9 +258,6 @@ margin-left: $espacio-chico;
     display: flex;
     justify-content: center;
 }
-
-
-
 }
 
 
@@ -258,12 +265,17 @@ margin-left: $espacio-chico;
     text-align: center;
     margin-top: 2rem;
     }
+@media (min-width:$pc){
+    .footer__2 iframe{
+        width: 50rem;
+        height: 50rem;
+    }
+}
 
 /* estilos pagina historia*/
 
 .historia {
     @include flex-column-center;
-    align-items: center;
     text-align: justify;
     
 }
@@ -288,7 +300,6 @@ margin-left: $espacio-chico;
 }
 .historia2{
     @include flex-column-center;
-            align-items: center;
             text-align: justify;
         
 }
@@ -308,9 +319,8 @@ margin-left: $espacio-chico;
         justify-items: stretch;
 
         }
-
+       
         
-
         .historia img{
            height: 350px;
            width: auto;
@@ -320,8 +330,8 @@ margin-left: $espacio-chico;
         
         .historia2 p{
             font-size: $pg;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: $espacio-medio+10;
+            margin-bottom: $espacio-medio+10;
 
         }
          .historia2 h3{
@@ -329,9 +339,7 @@ margin-left: $espacio-chico;
          } 
          .footer-general {
             @include flex-column-center;
-            align-items: center;
-            
-            
+              
          }
          .footer__1{
             height: 70px;
@@ -373,11 +381,11 @@ margin-left: $espacio-chico;
 
 
 
+
 /*Fotos y videos*/
 
 .fotos__1{
     @include flex-column-center;
-    align-items: center;
     gap: 1.5rem;
    
    
@@ -391,9 +399,7 @@ margin-left: $espacio-chico;
 }
 
 .video__historia1,.video__youtube1 {
-    display: flex;
-   justify-content: center;
-   align-items: center;
+   @include flex-column-center;
    padding: 0 7.5px;
    
    margin: 2rem 0 2rem 0;
@@ -405,20 +411,18 @@ margin-left: $espacio-chico;
 
 .fotos__2{
     @include flex-column-center;
-    align-items: center;
    gap: 1.5rem;
    
 
 }
 
 .footer__h2{
-    margin-top: 3rem;
+    margin-top: $espacio-medio+10;
 }
 
-@media (min-width:425px) {
+@media (min-width:$mobile-l) {
     .fotos__1 img{
     @include flex-column-center;
-    align-items: center;
     gap: 1.5rem;
     width: 40rem;
    
@@ -461,7 +465,7 @@ margin-left: $espacio-chico;
 
 
        
-@media (min-width:768px){
+@media (min-width: $tablet){
     
     .fotos__1 img{
         width: 500px;
@@ -503,7 +507,7 @@ width: 700px;
 
 
 }
-@media (min-width:992px){
+@media (min-width: $pc){
 .fotos__1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -523,7 +527,7 @@ width: 700px;
 
 /*noticias*/
 
-@media (min-width:768px){
+@media (min-width: $tablet){
 .noticias{
     @include flex-column-center;
     text-align: justify;
@@ -546,7 +550,6 @@ width: 700px;
 
 .juegos__1 img{
    @include flex-column-center;
-   align-items: center;
    
    
 }
@@ -556,7 +559,7 @@ width: 700px;
 }
 
 
-@media (min-width:768px){
+@media (min-width: $tablet){
 .juegos__1 img{
     padding: 1rem 5rem 3rem 2rem;
         margin: 1rem 2rem 5rem 3rem
@@ -576,9 +579,9 @@ width: 700px;
 }
 .cuestionario{
    
-   font-size: $espacio-chico;
-   margin-left: 50px;
-   margin-top: 30px;
+   font-size: $ps;
+   margin-left: $espacio-grande+10;
+   margin-top: $espacio-medio+10;
    padding: 0;
    height: 170px;
     }

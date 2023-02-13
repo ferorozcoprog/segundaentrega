@@ -149,8 +149,14 @@ p {
     height: 350px;
     justify-content: center;
   }
-  .actualidad img:first-child {
-    width: 462.5px;
+}
+/*  .actualidad img:first-child{
+        width: 462.5px;
+    }
+}*/
+@media (min-width: 1200px) {
+  .actualidad img {
+    height: 450px;
   }
 }
 .carousel-inner {
@@ -189,15 +195,18 @@ p {
   margin-left: 30px;
 }
 
+.footer-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__h2 {
   display: flex;
-  justify-items: left;
-  margin-left: 10px;
 }
 
 .footer__1 {
   display: inline-flex;
-  margin-left: 10px;
   margin-top: 30px;
   gap: 4rem;
   height: 10rem;
@@ -254,7 +263,7 @@ p {
   .footer__1 {
     height: 70px;
     margin-bottom: 40px;
-    margin-left: 250px;
+    margin-left: 10px;
     margin-top: 40px;
   }
   .footer__imgfb {
@@ -277,11 +286,16 @@ p {
   margin-top: 2rem;
 }
 
+@media (min-width: 992px) {
+  .footer__2 iframe {
+    width: 50rem;
+    height: 50rem;
+  }
+}
 /* estilos pagina historia*/
 .historia {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: center;
   text-align: justify;
 }
@@ -308,7 +322,6 @@ p {
 .historia2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: center;
   text-align: justify;
 }
@@ -344,7 +357,6 @@ p {
   .footer-general {
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-items: center;
   }
   .footer__1 {
@@ -384,7 +396,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
   gap: 1.5rem;
 }
 
@@ -397,7 +408,7 @@ p {
 
 .video__historia1, .video__youtube1 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 0 7.5px;
   margin: 2rem 0 2rem 0;
@@ -411,19 +422,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
   gap: 1.5rem;
 }
 
 .footer__h2 {
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 
 @media (min-width: 425px) {
   .fotos__1 img {
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-items: center;
     gap: 1.5rem;
     width: 40rem;
@@ -522,7 +531,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
 }
 
 .juegos p {
@@ -544,7 +552,7 @@ p {
 }
 
 .cuestionario {
-  font-size: 10px;
+  font-size: 13px;
   margin-left: 50px;
   margin-top: 30px;
   padding: 0;
