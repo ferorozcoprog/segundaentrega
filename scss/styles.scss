@@ -117,11 +117,7 @@ p{font-size: $pg;}
     justify-content: center;    
 } 
 }
-  /*  .actualidad img:first-child{
-        width: 462.5px;
-    }
-}*/
-
+  
 @media (min-width:1200px){
     .actualidad img {
         height: 450px ;
@@ -168,16 +164,18 @@ p{font-size: $pg;}
 
 .footer-general {
     @include flex-column-center;
+    
 
 }
 .footer__h2{
     display: flex;
+    
    
 }
 .footer__1{
     display: inline-flex;
-    
     margin-top: $espacio-medio+10;
+    margin-left: 20px;
     gap: 4rem;
     height: 10rem;
     width: 20rem;
@@ -241,7 +239,7 @@ margin-left: $espacio-chico;
     .footer__1{
         height: 70px;
         margin-bottom: $espacio-grande;
-        margin-left: 10px;
+        margin-left: 120px;
         margin-top:$espacio-grande;
     }
     .footer__imgfb{
@@ -270,6 +268,17 @@ margin-left: $espacio-chico;
         width: 50rem;
         height: 50rem;
     }
+    .footer__imgfb{
+        width: 90px;
+    }
+    .footer__imgig{
+        width: 90px;
+    }
+    .footer__imgtw {
+        width: 90px;
+        height: 90px;
+    }
+   
 }
 
 /* estilos pagina historia*/
@@ -304,9 +313,7 @@ margin-left: $espacio-chico;
         
 }
 
-.video__historia1{
-    width: 300px;
-}
+
       
 @media (min-width:$pc) {
     .historia{
@@ -535,11 +542,11 @@ width: 700px;
 }
 
 .noticias img{
-        padding: 1rem 5rem 3rem 5rem;
+        
         margin: 1rem 2rem 5rem 2rem
         }
 .noticias p{
-    margin: 0rem 6rem 4rem 4rem;
+    margin-bottom: 4rem;
     }
 }
 
@@ -561,16 +568,18 @@ width: 700px;
 
 @media (min-width: $tablet){
 .juegos__1 img{
-    padding: 1rem 5rem 3rem 2rem;
-        margin: 1rem 2rem 5rem 3rem
-   
+    width: 100%;
+    margin-top: $espacio-grande;
+    margin-bottom: $espacio-grande; 
+}
 }
 
-.juegos p{
-    margin: 3rem 0 2rem 1rem;
-    
-   
+@media (min-width:$pc){
+    .juegos__1 img{
+    margin-top: $espacio-extragrande;
+    margin-bottom: $espacio-extragrande;
 }
+    
 }
 
 /*unete*/
@@ -580,10 +589,10 @@ width: 700px;
 .cuestionario{
    
    font-size: $ps;
-   margin-left: $espacio-grande+10;
+   margin-left: $espacio-medio;
    margin-top: $espacio-medio+10;
    padding: 0;
-   height: 170px;
+   height: 250px;
     }
 
     .botones{
@@ -611,9 +620,9 @@ width: 700px;
         .cuestionario{
    
             font-size: $ps;
-            margin-left: 40px;
+            margin-left: 80px;
             margin-top: 50px;
-            margin-bottom: 80px;
+            margin-bottom: 30px;
                  
              }
           
@@ -621,7 +630,7 @@ width: 700px;
 
     @media (min-width:$tablet){
        .cuestionario{
-        margin-left: 220px;
+        margin-left: 280px;
        } 
 
 
@@ -630,8 +639,9 @@ width: 700px;
     @media (min-width: $pc){
        .cuestionario{
         font-size: 1.6rem;
-        margin-left: 300px;
+        margin-left: 380px;
         height: 300px;
+        margin-bottom: 50px;
        } 
        .botones{
         margin-top: 30px;

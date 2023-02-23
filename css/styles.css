@@ -150,10 +150,6 @@ p {
     justify-content: center;
   }
 }
-/*  .actualidad img:first-child{
-        width: 462.5px;
-    }
-}*/
 @media (min-width: 1200px) {
   .actualidad img {
     height: 450px;
@@ -208,6 +204,7 @@ p {
 .footer__1 {
   display: inline-flex;
   margin-top: 30px;
+  margin-left: 20px;
   gap: 4rem;
   height: 10rem;
   width: 20rem;
@@ -263,7 +260,7 @@ p {
   .footer__1 {
     height: 70px;
     margin-bottom: 40px;
-    margin-left: 10px;
+    margin-left: 120px;
     margin-top: 40px;
   }
   .footer__imgfb {
@@ -290,6 +287,16 @@ p {
   .footer__2 iframe {
     width: 50rem;
     height: 50rem;
+  }
+  .footer__imgfb {
+    width: 90px;
+  }
+  .footer__imgig {
+    width: 90px;
+  }
+  .footer__imgtw {
+    width: 90px;
+    height: 90px;
   }
 }
 /* estilos pagina historia*/
@@ -324,10 +331,6 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: justify;
-}
-
-.video__historia1 {
-  width: 300px;
 }
 
 @media (min-width: 992px) {
@@ -519,11 +522,10 @@ p {
     text-align: justify;
   }
   .noticias img {
-    padding: 1rem 5rem 3rem 5rem;
     margin: 1rem 2rem 5rem 2rem;
   }
   .noticias p {
-    margin: 0rem 6rem 4rem 4rem;
+    margin-bottom: 4rem;
   }
 }
 /*proximos juegos*/
@@ -539,11 +541,15 @@ p {
 
 @media (min-width: 768px) {
   .juegos__1 img {
-    padding: 1rem 5rem 3rem 2rem;
-    margin: 1rem 2rem 5rem 3rem;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
-  .juegos p {
-    margin: 3rem 0 2rem 1rem;
+}
+@media (min-width: 992px) {
+  .juegos__1 img {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 /*unete*/
@@ -553,10 +559,10 @@ p {
 
 .cuestionario {
   font-size: 13px;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 30px;
   padding: 0;
-  height: 170px;
+  height: 250px;
 }
 
 .botones, .boton-limpiar, .boton-enviar {
@@ -580,21 +586,22 @@ p {
 @media (min-width: 425px) {
   .cuestionario {
     font-size: 13px;
-    margin-left: 40px;
+    margin-left: 80px;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 768px) {
   .cuestionario {
-    margin-left: 220px;
+    margin-left: 280px;
   }
 }
 @media (min-width: 992px) {
   .cuestionario {
     font-size: 1.6rem;
-    margin-left: 300px;
+    margin-left: 380px;
     height: 300px;
+    margin-bottom: 50px;
   }
   .botones, .boton-enviar, .boton-limpiar {
     margin-top: 30px;
