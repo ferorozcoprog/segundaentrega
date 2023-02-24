@@ -615,6 +615,43 @@ width: 700px;
     .cuestionario div{
         margin-bottom: $espacio-chico;
     }
+    .tienda{
+       @include flex-column-center;
+       margin-top: $espacio-medio;
+    
+      
+    }
+
+    .card_1, .card_2{
+        margin-bottom: $espacio-chico+10;
+        width: 300px;
+    }
+
+    .card_3{
+        margin-bottom: $espacio-extragrande;
+        width: 300px;
+    }
+
+    @media (min-width: $pc) {
+        .tienda{
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: baseline;
+           gap: 40px;
+           margin-top: $espacio-grande;
+           
+        }
+       
+
+    }
+
+    
+
+
+    
+       
+
 
     @media (min-width:$mobile-l){
         .cuestionario{
